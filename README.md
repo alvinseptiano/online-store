@@ -1,2 +1,2 @@
 # Simple Online Store
-![Alt text](/capture.png)
+![Alt text](img/capture.png)
