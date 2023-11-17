@@ -1,45 +1,112 @@
-<!--
-    https://github.com/alvinseptiano/online-store
--->
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='style.css' rel='stylesheet' type='text/css' />
+    <!-- <link href='style.css' rel='stylesheet' type='text/css' /> -->
     <title>Simple Web Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #555;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .card-container {
+            text-align: center;
+            width: 100%; 
+            padding: 20px;
+        }
+
+        .card {
+            display: inline-block;
+            width: 200px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        
+        .card h2 {
+            color: #232323;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        .card button {
+            display: block;
+            width: 100%;
+            padding: 8px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>My Web Store</h1>
     </header>
-
+    <!--Menu navigasi bar-->
     <nav>
         <a href="#">Home</a>
-        <a href="#">Products</a>
-        <a href="#">Contact</a>
+        <a href="#">Produk</a>
+        <a href="#">Troli</a>
     </nav>
-
+    <!--Container card-->
     <div class="card-container">
         <div class="card">
-            <img src="img/pencil.jpg" alt="Produk 1">
-            <h2>Produk A</h2>
-            <p>Price: $19.99</p>
-            <button>Add to Cart</button>
+            <img src="img/pensil.jpg" alt="Produk 1">
+            <h2>Pensil</h2>
+            <p>Harga: Rp.25 000</p>
+            <button>Tambah ke troli</button>
         </div>
 
         <div class="card">
-            <img src="img/pencil.jpg" alt="Produk 2">
-            <h2>Produk B</h2>
-            <p>Price: $24.99</p>
-            <button>Add to Cart</button>
+            <img src="img/serutan.jpg" alt="Produk 2">
+            <h2>Serutan</h2>
+            <p>Harga: Rp.56 000</p>
+            <button>Tambah ke troli</button>
         </div>
 
         <div class="card">
-            <img src="img/pencil.jpg" alt="Produk 3">
-            <h2>Produk C</h2>
-            <p>Price: $29.99</p>
-            <button>Add to Cart</button>
+            <img src="img/penghapus.jpg" alt="Produk 3">
+            <h2>Penghapus</h2>
+            <p>Harga: Rp.35 000</p>
+            <button>Tambah ke troli</button>
         </div>
     </div>
 </body>
